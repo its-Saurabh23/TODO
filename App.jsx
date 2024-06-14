@@ -17,12 +17,12 @@ function App() {
   };
   const handleEnter = (e) => {
     if (e.key == "Enter") {
-      handleTodo();
+    handleTodo();
     }
   };
   const handleRemove = (index)=>{
     const newTodo = todos.filter((_,i)=> i !== index);
-     setTodos(newTodo);
+    setTodos(newTodo);
   }
   return (
     <div className="App">
